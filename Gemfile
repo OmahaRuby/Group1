@@ -11,6 +11,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+# Use Foundation for styles
+gem 'foundation-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -41,5 +43,16 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'capybara', '~> 2.4.3'  # To simulate user interaction with browser
+  gem 'capybara-webkit'  # For pages with JavaScript - so they load in real webpage
+  gem 'database_cleaner'  # To clean database after capybara-webkit messes it up
 end
+
+group :test do
+  gem 'shoulda-matchers', require: false # Easy validations testing
+end
+
 
