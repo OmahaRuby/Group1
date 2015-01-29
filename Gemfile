@@ -19,6 +19,7 @@ gem 'foundation-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'pry-rails'
+gem 'omniauth-meetup'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -32,7 +33,7 @@ group :development, :test do
 
   gem 'factory_girl_rails'
   gem 'rspec-rails'
-  gem 'capybara', '~> 2.4.3'  # To simulate user interaction with browser
+  gem 'capybara'  # To simulate user interaction with browser
   gem 'capybara-webkit'  # For pages with JavaScript - so they load in real webpage
   gem 'database_cleaner'  # To clean database after capybara-webkit messes it up
 end
