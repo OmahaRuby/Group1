@@ -33,8 +33,8 @@ group :development, :test do
 
   gem 'factory_girl_rails'
   gem 'rspec-rails'
-  gem 'capybara'  # To simulate user interaction with browser
-  gem 'capybara-webkit'  # For pages with JavaScript - so they load in real webpage
+  # gem 'capybara'  # To simulate user interaction with browser
+  # gem 'capybara-webkit'  # For pages with JavaScript - so they load in real webpage
   gem 'database_cleaner'  # To clean database after capybara-webkit messes it up
 end
 
