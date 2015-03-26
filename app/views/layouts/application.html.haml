@@ -3,10 +3,12 @@
   %head
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %title= content_for?(:title) ? yield(:title) : "foundation-rails"
+    %title= content_for?(:title) ? yield(:title) : "Omaha Ruby"
     = stylesheet_link_tag "application"
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
-  %body
+  %body.row
+    = render partial: 'layouts/header'
     = yield
+    = render partial: 'layouts/footer'
     = javascript_include_tag "application"
