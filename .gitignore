@@ -17,3 +17,7 @@
 /tmp
 
 config/omniauth.yml
+
+.ruby-version
+.ruby-gemset
+.idea
