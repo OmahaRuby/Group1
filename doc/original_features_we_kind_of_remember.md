@@ -6,6 +6,7 @@ We sluethed through the schema to come up with the following features.
 
 # Possible features
 
+* Users can sign up (through meetup, possibly other ways)
 * Users can suggest a topic
 * Users can vote on topics
 * Users can sign up to speak on a suggegsted topic
