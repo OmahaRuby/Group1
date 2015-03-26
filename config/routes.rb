@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :users
-  resources :topics
+  resources :topics, only: [:index]
   get "auth/:provider/callback", to: "users#callback"
 
   root "topics#index"
